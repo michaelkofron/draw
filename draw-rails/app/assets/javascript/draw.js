@@ -1,6 +1,5 @@
 
 let canvas = document.getElementById('canvas')
-let continer = document.getElementById('canvas-container')
 
 // some hotfixes... ( ≖_≖)
 document.body.style.margin = 0;

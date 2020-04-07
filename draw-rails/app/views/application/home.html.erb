@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Draw</title>
+        <title>Quick Draw</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <%= stylesheet_link_tag 'home_style.css', media: 'print, screen' %>
     </head>
@@ -8,7 +8,7 @@
 
         <div id="flex">
             <div id="logo">
-                <h1>DRAW</h1>
+                <h1>QUICK DRAW</h1>
             </div>
             <div id="colors">
                 <div id="red"></div><div id="blue"></div><div id="green"></div><div id="yellow"></div><div id="orange"></div><div id="purple"></div><div id="black"></div>
@@ -18,11 +18,15 @@
 
                 </canvas>
             </div>
+
+            <div id="linkbutton"><h2>Get link</h2></div>
+            <div id="completed">please wait...</div>
         
         
         </div>
 
         <div id="hidden"></div>
+        <div id="key"></div>
         
 
 
@@ -32,5 +36,60 @@
     <footer>
         <%= javascript_include_tag 'draw' %>
         <%= javascript_include_tag 'colors' %>
+        <script>
+
+            let proxyUrl = 'https://ancient-hamlet-73756.herokuapp.com/'
+            document.getElementById("linkbutton").addEventListener("click", function(){
+                let button = document.getElementById('linkbutton')
+                let completed = document.getElementById('completed')
+                button.style.display = "none"
+                completed.style.display = "flex"
+                let configurationObject = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "Authorization": "Client-ID 27a78494c88d8d5"
+                    },
+                    body: JSON.stringify({
+                        image: canvas.toDataURL().slice(22)
+                    })
+                }
+
+                fetch(proxyUrl + "https://api.imgur.com/3/upload", configurationObject)
+                    .then(function(response){
+                        return response.json()
+                    })
+                    .then(function(object){
+                        console.log(object)
+
+                        let newConfig = {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Accept": "application/json"
+                            },
+                            body: JSON.stringify({
+                                link: `${object.data.link}`,
+                                key: `${future_key}`
+                            })
+                        }
+
+                        fetch("http://localhost:3000/savedrawing", newConfig)
+                            .then(function(response){
+                                return response.json()
+                            })
+                            .then(function(object){
+                                console.log(object)
+
+                                changeLink(object.key)
+                            })
+                        
+                    })
+            })
+        
+        
+        
+        </script>
     </footer>
 </html>

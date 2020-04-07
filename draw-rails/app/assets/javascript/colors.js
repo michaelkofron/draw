@@ -1,4 +1,6 @@
 
+let future_key = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+
 let red = document.getElementById("red")
 let green = document.getElementById("green")
 let blue = document.getElementById("blue")
@@ -40,5 +42,12 @@ black.addEventListener("click", function() {
 purple.addEventListener("click", function() {
     hidden.innerText = colorArray[6]
 })
+
+function changeLink(link){
+    let completed = document.getElementById('completed')
+    completed.innerText = `your drawing's link: http://localhost:3000/${link}`
+    completed.style.display = "flex"
+
+}
 
 //unknown problem with undefined values in for loop, figure out later and recode, this works for now but is ugly.

@@ -1254,3 +1254,1148 @@ Processing by ApplicationController#home as HTML
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3706)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrawings (20200407212215)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "drawings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "picture_link" varchar, "key" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200407212215"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-07 21:22:57.387207"], ["updated_at", "2020-04-07 21:22:57.387207"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-07 16:25:17 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 65.9ms | Allocations: 24118)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms | Allocations: 25975)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:25:39 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 12.6ms | Allocations: 11826)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 12080)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:26:55 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 13.3ms | Allocations: 10809)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 11950)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:27:12 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 12.8ms | Allocations: 11051)
+Completed 200 OK in 13ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 11303)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:27:23 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 15.1ms | Allocations: 9688)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 9939)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:27:40 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 11.8ms | Allocations: 10607)
+Completed 200 OK in 12ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 10860)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:38:07 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 54.9ms | Allocations: 19715)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms | Allocations: 21574)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:45:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 39.0ms | Allocations: 10036)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 10443)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:45:27 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 4.1ms | Allocations: 3457)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:54:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 11.6ms | Allocations: 10223)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 11364)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 16:55:04 -0500
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-07 16:55:25 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 58.2ms | Allocations: 20299)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.0ms | Allocations: 22160)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 16:55:31 -0500
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/savedrawing" for ::1 at 2020-04-07 16:58:27 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"savedrawing"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "savedrawing"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:10:in `getdrawing'
+Completed 406 Not Acceptable in 13ms (ActiveRecord: 0.7ms | Allocations: 5336)
+
+
+  
+ActionController::MissingExactTemplate (DrawingsController#getdrawing is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-07 17:03:50 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 10.6ms | Allocations: 6550)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 8513)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:03:57 -0500
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:03:57 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-07 17:04:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 2.9ms | Allocations: 3475)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3886)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:04:34 -0500
+  
+SyntaxError (/Users/ugp/Desktop/draw/draw-rails/app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+        return json: drawing
+                   ^):
+  
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+Started GET "/savedrawing" for ::1 at 2020-04-07 17:04:47 -0500
+  
+SyntaxError (/Users/ugp/Desktop/draw/draw-rails/app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+        return json: drawing
+                   ^):
+  
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+Started GET "/savedrawing" for ::1 at 2020-04-07 17:05:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/ugp/Desktop/draw/draw-rails/app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+        return json: drawing
+                   ^):
+  
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+app/controllers/drawings_controller.rb:6: syntax error, unexpected ':', expecting end
+Started GET "/savedrawing" for ::1 at 2020-04-07 17:05:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"savedrawing"}
+  [1m[36mDrawing Load (0.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "savedrawing"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:10:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.3ms | Allocations: 74)
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 2577)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:05:34 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.0ms | Allocations: 3458)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:05:39 -0500
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/savedrawing" for ::1 at 2020-04-07 17:06:12 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"savedrawing"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "savedrawing"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:10:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 774)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDrawing Load (0.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-04-07 17:07:50 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 13.3ms | Allocations: 6550)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 8508)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:08:04 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.8ms | Allocations: 3688)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4821)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:08:07 -0500
+  
+AbstractController::ActionNotFound (The action 'save' could not be found for DrawingsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-07 17:10:54 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 4.3ms | Allocations: 3477)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3888)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:11:01 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/YnPhY68.png", "key"=>"58qjzaedohklwyjbhd59v", "drawing"=>{"key"=>"58qjzaedohklwyjbhd59v"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.4ms | Allocations: 415)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:217:in `handle_unverified_request'
+actionpack (6.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:249:in `handle_unverified_request'
+actionpack (6.0.2.2) lib/action_controller/metal/request_forgery_protection.rb:244:in `verify_authenticity_token'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-07 17:12:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 2.9ms | Allocations: 3458)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3866)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:12:31 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/NazAk0v.png", "key"=>"m76mpagy0jkphhafh59cv", "drawing"=>{"key"=>"m76mpagy0jkphhafh59cv"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/NazAk0v.png"], ["key", "m76mpagy0jkphhafh59cv"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.8ms | Allocations: 5355)
+
+
+  
+ActionView::MissingTemplate (Missing template drawings/show, application/show with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/ugp/Desktop/draw/draw-rails/app/views"
+  * "/Users/ugp/.rvm/gems/ruby-2.6.3/gems/actiontext-6.0.2.2/app/views"
+  * "/Users/ugp/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.0.2.2/app/views"
+):
+  
+app/controllers/drawings_controller.rb:8:in `save'
+Started GET "/" for ::1 at 2020-04-07 17:13:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.3ms | Allocations: 3456)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3863)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:13:21 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/aQvCut0.png", "key"=>"sipchcc74jaciyd1usgyg", "drawing"=>{"key"=>"sipchcc74jaciyd1usgyg"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/aQvCut0.png"], ["key", "sipchcc74jaciyd1usgyg"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 3882)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:16:22 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 55.7ms | Allocations: 19558)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 20695)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:16:32 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/euU5rAI.png", "key"=>"oopiccoxgqxzkm0lnqqyr", "drawing"=>{"key"=>"oopiccoxgqxzkm0lnqqyr"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.5ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/euU5rAI.png"], ["key", "oopiccoxgqxzkm0lnqqyr"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2148)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:16:50 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 12.3ms | Allocations: 10887)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 11139)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:16:55 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/uVCvB7m.png", "key"=>"pv6huqt9a9ogsykjf8kalf", "drawing"=>{"key"=>"pv6huqt9a9ogsykjf8kalf"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/uVCvB7m.png"], ["key", "pv6huqt9a9ogsykjf8kalf"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2154)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:16:58 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/e53relM.png", "key"=>"pv6huqt9a9ogsykjf8kalf", "drawing"=>{"key"=>"pv6huqt9a9ogsykjf8kalf"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/e53relM.png"], ["key", "pv6huqt9a9ogsykjf8kalf"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2161)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:17:44 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 11.2ms | Allocations: 11738)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 11989)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:17:48 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/0fUQJar.png", "key"=>"1ktwvr6fl049vbogyuht0o", "drawing"=>{"key"=>"1ktwvr6fl049vbogyuht0o"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.5ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/0fUQJar.png"], ["key", "1ktwvr6fl049vbogyuht0o"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2146)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:17:53 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/Vte79Tr.png", "key"=>"1ktwvr6fl049vbogyuht0o", "drawing"=>{"key"=>"1ktwvr6fl049vbogyuht0o"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.5ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/Vte79Tr.png"], ["key", "1ktwvr6fl049vbogyuht0o"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 2146)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:18:03 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/ltbVQcG.png", "key"=>"1ktwvr6fl049vbogyuht0o", "drawing"=>{"key"=>"1ktwvr6fl049vbogyuht0o"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/ltbVQcG.png"], ["key", "1ktwvr6fl049vbogyuht0o"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:20:20 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 24.3ms | Allocations: 19030)
+Completed 200 OK in 26ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 20167)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:20:23 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/5kZ0iQa.png", "key"=>"rltkkqefoewukje5pw15e", "drawing"=>{"key"=>"rltkkqefoewukje5pw15e"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.6ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/5kZ0iQa.png"], ["key", "rltkkqefoewukje5pw15e"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2147)
+
+
+Started GET "/rltkkqefoewukje5pw15e" for ::1 at 2020-04-07 17:20:39 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"rltkkqefoewukje5pw15e"}
+  [1m[36mDrawing Load (0.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "rltkkqefoewukje5pw15e"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.3ms | Allocations: 79)
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 3767)
+
+
+Started GET "/rltkkqefoewukje5pw15e" for ::1 at 2020-04-07 17:21:36 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"rltkkqefoewukje5pw15e"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "rltkkqefoewukje5pw15e"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.3ms | Allocations: 102)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 2049)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:23:19 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 12.4ms | Allocations: 11133)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 11672)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:23:30 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/VPI0njT.png", "key"=>"bst86ez0c4cwbw4lfhc5k", "drawing"=>{"key"=>"bst86ez0c4cwbw4lfhc5k"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/VPI0njT.png"], ["key", "bst86ez0c4cwbw4lfhc5k"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:24:00 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 13.7ms | Allocations: 12322)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 12574)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:24:03 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/A8qeFjC.png", "key"=>"qhf07ai1axcbruxha8c6w", "drawing"=>{"key"=>"qhf07ai1axcbruxha8c6w"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/A8qeFjC.png"], ["key", "qhf07ai1axcbruxha8c6w"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:25:22 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 20.7ms | Allocations: 10315)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 11447)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:25:26 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/AqQ7mIg.png", "key"=>"7f1tn378yxcgk5qcjio3wl", "drawing"=>{"key"=>"7f1tn378yxcgk5qcjio3wl"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/AqQ7mIg.png"], ["key", "7f1tn378yxcgk5qcjio3wl"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:25:48 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.7ms | Allocations: 3700)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4837)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:25:50 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/sjFhUoF.png", "key"=>"j5i1e7g3kagppphlni3yw", "drawing"=>{"key"=>"j5i1e7g3kagppphlni3yw"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/sjFhUoF.png"], ["key", "j5i1e7g3kagppphlni3yw"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:26:32 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 13.1ms | Allocations: 11524)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 12654)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:26:59 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 4.2ms | Allocations: 4261)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5391)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:27:02 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/lROqLOl.png", "key"=>"g26zfjdryclyczbddo8bk", "drawing"=>{"key"=>"g26zfjdryclyczbddo8bk"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/lROqLOl.png"], ["key", "g26zfjdryclyczbddo8bk"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:27:16 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 11.9ms | Allocations: 3702)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 4835)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:27:21 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/KMZUsUv.png", "key"=>"stw61yht1ghhatq7vtu5ed", "drawing"=>{"key"=>"stw61yht1ghhatq7vtu5ed"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/KMZUsUv.png"], ["key", "stw61yht1ghhatq7vtu5ed"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/stw61yht1ghhatq7vtu5ed" for ::1 at 2020-04-07 17:27:26 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"stw61yht1ghhatq7vtu5ed"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "stw61yht1ghhatq7vtu5ed"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.5ms | Allocations: 106)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1458)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:28:11 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.5ms | Allocations: 3702)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4839)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:28:17 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/Ok3Eg5l.png", "key"=>"526xmhpxtvmj705o0d3t7n", "drawing"=>{"key"=>"526xmhpxtvmj705o0d3t7n"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/Ok3Eg5l.png"], ["key", "526xmhpxtvmj705o0d3t7n"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:28:19 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.7ms | Allocations: 3455)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3707)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:15 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 12.7ms | Allocations: 10881)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 12011)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:16 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 2.9ms | Allocations: 3455)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3707)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:17 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.3ms | Allocations: 3455)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3706)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:18 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 4.3ms | Allocations: 3455)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3706)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:18 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 11.0ms | Allocations: 3456)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:29:42 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.4ms | Allocations: 3706)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4843)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:30:00 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 13.2ms | Allocations: 11924)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 12176)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:31:17 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.5ms | Allocations: 3455)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3706)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:38:00 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.8ms | Allocations: 3701)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4831)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:38:06 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/Z9O3iVt.png", "key"=>"rlqzyasz2z1c9bzlg84n7", "drawing"=>{"key"=>"rlqzyasz2z1c9bzlg84n7"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/Z9O3iVt.png"], ["key", "rlqzyasz2z1c9bzlg84n7"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 2146)
+
+
+Started GET "/rlqzyasz2z1c9bzlg84n7" for ::1 at 2020-04-07 17:38:10 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"rlqzyasz2z1c9bzlg84n7"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "rlqzyasz2z1c9bzlg84n7"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.4ms | Allocations: 101)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1465)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:38:19 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 4.0ms | Allocations: 3455)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3707)
+
+
