@@ -2399,3 +2399,128 @@ Processing by ApplicationController#home as HTML
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3707)
 
 
+Started GET "/" for ::1 at 2020-04-07 17:41:13 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 70.2ms | Allocations: 21092)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms | Allocations: 23131)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:41:37 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/3NcR28q.png", "key"=>"nwccvfdt60q6singelwbh", "drawing"=>{"key"=>"nwccvfdt60q6singelwbh"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.5ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES (?, ?)[0m  [["picture_link", "https://i.imgur.com/3NcR28q.png"], ["key", "nwccvfdt60q6singelwbh"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 4226)
+
+
+Started GET "/nwccvfdt60q6singelwbh" for ::1 at 2020-04-07 17:41:43 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"nwccvfdt60q6singelwbh"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = ? LIMIT ?[0m  [["key", "nwccvfdt60q6singelwbh"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.4ms | Allocations: 105)
+Completed 200 OK in 22ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3799)
+
+
+  [1m[35m (83.4ms)[0m  [1m[35mCREATE DATABASE "draw-rails_development" ENCODING = 'unicode'[0m
+  [1m[35m (81.7ms)[0m  [1m[35mCREATE DATABASE "draw-rails_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "drawings" CASCADE[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "drawings" ("id" bigserial primary key, "picture_link" character varying, "key" character varying)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200407212215)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-07 22:51:01.874951"], ["updated_at", "2020-04-07 22:51:01.874951"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "71cb32ac1f79a2abb2b3fc9268678abadf9902f1"], ["created_at", "2020-04-07 22:51:01.886003"], ["updated_at", "2020-04-07 22:51:01.886003"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "drawings" CASCADE[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "drawings" ("id" bigserial primary key, "picture_link" character varying, "key" character varying)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200407212215)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-07 22:51:01.942612"], ["updated_at", "2020-04-07 22:51:01.942612"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-04-07 22:51:01.949080"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "71cb32ac1f79a2abb2b3fc9268678abadf9902f1"], ["created_at", "2020-04-07 22:51:01.955451"], ["updated_at", "2020-04-07 22:51:01.955451"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8661726530527829010)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8661726530527829010)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-07 17:51:15 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 10.8ms | Allocations: 6568)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 8426)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:51:55 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.5ms | Allocations: 3703)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4836)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:52:16 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 73.4ms | Allocations: 19112)
+Completed 200 OK in 74ms (Views: 73.9ms | ActiveRecord: 0.0ms | Allocations: 19369)
+
+
+Started POST "/savedrawing" for ::1 at 2020-04-07 17:52:30 -0500
+Processing by DrawingsController#save as JSON
+  Parameters: {"link"=>"https://i.imgur.com/8TGeXHV.png", "key"=>"ed54edzjmzhzfip82dole9", "drawing"=>{"key"=>"ed54edzjmzhzfip82dole9"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[36mDrawing Create (0.9ms)[0m  [1m[32mINSERT INTO "drawings" ("picture_link", "key") VALUES ($1, $2) RETURNING "id"[0m  [["picture_link", "https://i.imgur.com/8TGeXHV.png"], ["key", "ed54edzjmzhzfip82dole9"]]
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `save'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 8.1ms | Allocations: 4219)
+
+
+Started GET "/ed54edzjmzhzfip82dole9" for ::1 at 2020-04-07 17:52:34 -0500
+Processing by DrawingsController#getdrawing as HTML
+  Parameters: {"key"=>"ed54edzjmzhzfip82dole9"}
+  [1m[36mDrawing Load (0.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."key" = $1 LIMIT $2[0m  [["key", "ed54edzjmzhzfip82dole9"], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:12:in `getdrawing'
+  Rendering drawings/show.html.erb
+  Rendered drawings/show.html.erb (Duration: 0.6ms | Allocations: 110)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 1.0ms | Allocations: 1957)
+
+
+Started GET "/" for ::1 at 2020-04-07 17:52:50 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 3.6ms | Allocations: 3455)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3707)
+
+
