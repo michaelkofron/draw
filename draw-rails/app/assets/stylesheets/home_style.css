@@ -50,6 +50,7 @@ div#completed {
 
 div#linkbutton:hover {
     cursor: pointer;
+    transform: scale(1.2)
 }
 
 div#canvas-container {
@@ -94,6 +95,7 @@ div#key {
 
 div#colors > div:hover {
     cursor: pointer;
+    transform: scale(1.2)
 }
 
 div#red {

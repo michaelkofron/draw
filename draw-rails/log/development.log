@@ -2524,3 +2524,18 @@ Processing by ApplicationController#home as HTML
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3707)
 
 
+Started GET "/" for ::1 at 2020-04-07 18:09:37 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 106.4ms | Allocations: 34573)
+Completed 200 OK in 111ms (Views: 110.4ms | ActiveRecord: 0.0ms | Allocations: 36431)
+
+
+Started GET "/" for ::1 at 2020-04-07 18:10:12 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb
+  Rendered application/home.html.erb (Duration: 33.2ms | Allocations: 10246)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 10502)
+
+
