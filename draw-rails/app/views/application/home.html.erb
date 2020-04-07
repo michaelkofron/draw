@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Draw</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%= stylesheet_link_tag 'home_style.css', media: 'print, screen' %>
+    </head>
+    <body>
+
+        <div id="flex">
+            <div id="logo">
+                <h1>DRAW</h1>
+            </div>
+            <div id="colors">
+                <div id="red"></div><div id="blue"></div><div id="green"></div><div id="yellow"></div><div id="orange"></div><div id="purple"></div><div id="black"></div>
+            </div>
+            <div id="canvas-container">
+                <canvas id="canvas">
+
+                </canvas>
+            </div>
+        
+        
+        </div>
+
+        <div id="hidden"></div>
+        
+
+
+
+
+    </body>
+    <footer>
+        <%= javascript_include_tag 'draw' %>
+        <%= javascript_include_tag 'colors' %>
+    </footer>
+</html>
