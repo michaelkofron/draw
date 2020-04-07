@@ -45,7 +45,7 @@ purple.addEventListener("click", function() {
 
 function changeLink(link){
     let completed = document.getElementById('completed')
-    completed.innerHTML = `<p>your drawing's link: <a href="https://sharedrawings/${link}">https://sharedrawings/${link}</a></p>`
+    completed.innerHTML = `<p>your drawing's link: <a href="https://sharedrawings.herokuapp.com/${link}">https://sharedrawings.herokuapp.com/${link}</a></p>`
     completed.style.display = "flex"
 
 }
