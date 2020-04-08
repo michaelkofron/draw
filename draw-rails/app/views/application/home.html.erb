@@ -62,6 +62,9 @@
                     })
                     .then(function(object){
                         console.log(object)
+                        console.log(object.data.link)
+                        console.log(future_key)
+        
 
                         let newConfig = {
                             method: "POST",
@@ -75,7 +78,9 @@
                             })
                         }
 
-                        fetch(proxyUrl + "https://sharedrawings.herokuapp.com/savedrawing", newConfig)
+                        console.log(newConfig)
+
+                        fetch("https://sharedrawings.herokuapp.com/savedrawing", newConfig)
                             .then(function(response){
                                 return response.json()
                             })
