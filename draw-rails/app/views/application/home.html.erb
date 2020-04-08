@@ -38,7 +38,7 @@
         <%= javascript_include_tag 'colors' %>
         <script>
 
-            let proxyUrl = 'https://ancient-hamlet-73756.herokuapp.com/'
+            let proxyUrl = 'http://ancient-hamlet-73756.herokuapp.com/'
             document.getElementById("linkbutton").addEventListener("click", function(){
                 let button = document.getElementById('linkbutton')
                 let completed = document.getElementById('completed')
@@ -80,7 +80,7 @@
 
                         console.log(newConfig)
 
-                        fetch("http://sharedrawings.herokuapp.com/savedrawing", newConfig)
+                        fetch("https://sharedrawings.herokuapp.com/savedrawing", newConfig)
                             .then(function(response){
                                 return response.json()
                             })
