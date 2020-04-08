@@ -69,6 +69,7 @@
                         let newConfig = {
                             method: "POST",
                             headers: {
+                                "mo"
                                 "Content-Type": "application/json",
                                 "Accept": "application/json"
                             },
@@ -80,7 +81,7 @@
 
                         console.log(newConfig)
 
-                        fetch("https://sharedrawings.herokuapp.com/savedrawing", newConfig)
+                        fetch("http://sharedrawings.herokuapp.com/savedrawing", newConfig)
                             .then(function(response){
                                 return response.json()
                             })
