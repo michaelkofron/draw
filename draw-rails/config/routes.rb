@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   post '/savedrawing', to: "drawings#save"
 
   get '/:key', to: "drawings#getdrawing"
+
+
+  match '*unmatched_route', :to => 'drawings#route_options', via: [:options]
+  
 end
