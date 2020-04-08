@@ -75,7 +75,7 @@
                             })
                         }
 
-                        fetch("https://sharedrawings.herokuapp.com/savedrawing", newConfig)
+                        fetch(proxyUrl + "https://sharedrawings.herokuapp.com/savedrawing", newConfig)
                             .then(function(response){
                                 return response.json()
                             })
