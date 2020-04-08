@@ -1,7 +1,11 @@
 <html>
     <head>
         <title>Quick Draw</title>
-        <script>window.location.href = "http://sharedrawings.herokuapp.com/"</script>
+        <script>
+        if (window.location.href == "https://sharedrawings.herokuapp.com/"){
+            window.location.href = "http://sharedrawings.herokuapp.com/"
+        }
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <%= stylesheet_link_tag 'home_style.css', media: 'print, screen' %>
     </head>
